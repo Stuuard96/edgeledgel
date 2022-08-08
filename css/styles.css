@@ -10,14 +10,14 @@ html {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   margin: 0;
-  font-weight: 300;
   line-height: 1.2;
 }
 
 p {
-  margin: 1rem 0;
+  margin: 0;
 }
 
 ul,
@@ -92,21 +92,18 @@ body {
 }
 
 .hero .content {
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 100%;
   padding: 0 3rem;
 }
 
 .hero .content h1 {
   font-size: 5.5rem;
+  font-weight: 300;
 }
 
 .hero .content p {
   font-size: 2.3rem;
+  font-weight: 300;
   max-width: 60rem;
   margin: 2rem 0 3rem;
 }
@@ -123,4 +120,28 @@ body {
 
 .hero * {
   z-index: 1;
+}
+
+/* Icons */
+.icons {
+  padding: 3rem;
+}
+
+.icons h3 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.icons p {
+  font-size: 1.3rem;
+}
+
+.icons i {
+  font-size: 3rem;
+  background-color: var(--FIRST_PRIMARY_COLOR);
+  color: var(--FIRST_DEFAULT_COLOR);
+  padding: 1.5rem;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
 }

@@ -47,3 +47,15 @@
   background-color: var(--TERTEARY_PRIMARY_COLOR);
   color: var(--FIRST_PRIMARY_TEXT);
 }
+
+.flex__items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+.flex__items > div {
+  padding: 2rem;
+}
