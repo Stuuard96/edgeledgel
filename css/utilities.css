@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+:root {
+  --OPEN_SANS: Open Sans, sans-serif;
+  --FIRST_PRIMARY_COLOR: #28a745;
+  --SECOND_PRIMARY_COLOR: #0284d0;
+  --TERTEARY_PRIMARY_COLOR: #f4f4f4;
+  --FIRST_PRIMARY_TEXT: #333;
+  --FIRST_DEFAULT_COLOR: #fff;
+  --SECOND_DEFAULT_COLOR: #000;
+}
+
+.text__primary {
+  color: var(--FIRST_PRIMARY_COLOR);
+}
+
+.btn {
+  background-color: var(--FIRST_PRIMARY_COLOR);
+  color: var(--FIRST_DEFAULT_COLOR);
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn__primary {
+  background-color: var(--FIRST_PRIMARY_COLOR);
+  color: var(--FIRST_DEFAULT_COLOR);
+}
+
+.btn__secondary {
+  background-color: var(--SECOND_PRIMARY_COLOR);
+  color: var(--FIRST_DEFAULT_COLOR);
+}
+
+.btn__dark {
+  background-color: var(--FIRST_PRIMARY_TEXT);
+  color: var(--FIRST_DEFAULT_COLOR);
+}
+
+.btn__ligth {
+  background-color: var(--TERTEARY_PRIMARY_COLOR);
+  color: var(--FIRST_PRIMARY_TEXT);
+}
