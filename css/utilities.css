@@ -66,6 +66,10 @@
   text-align: center;
 }
 
+.flex__items h4 {
+  margin: 1rem 0;
+}
+
 .flex__items > div {
   padding: 2rem;
 }
@@ -113,13 +117,10 @@
 
 .flex__columns h4 {
   margin-bottom: 1rem;
-  font-size: 1.3rem;
-  font-weight: 400;
 }
 
 .flex__columns p {
   margin: 2rem 0;
-  font-size: 1.3rem;
 }
 
 /* Section Header */
@@ -136,15 +137,6 @@
   font-size: 4rem;
   font-weight: 300;
   margin: 2rem 0;
-}
-
-.section__header h4 {
-  font-size: 1.4rem;
-  font-weight: 400;
-}
-
-.section__header p {
-  font-size: 1.4rem;
 }
 
 .section__padding {

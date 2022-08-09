@@ -14,10 +14,15 @@ h2,
 h3,
 h4 {
   margin: 0;
-  line-height: 1.2;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
 p {
+  font-size: 1.4rem;
   margin: 0;
 }
 
@@ -41,8 +46,12 @@ img {
   width: 100%;
 }
 
+input,
+label {
+  font-size: 1.4rem;
+}
+
 body {
-  margin: 0;
   font-family: var(--OPEN_SANS);
   background: var(--FIRST_DEFAULT_COLOR);
   color: var(--FIRST_PRIMARY_TEXT);
@@ -147,6 +156,74 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.cases img:hover {
+/* .cases img:hover {
   opacity: 0.7;
+} */
+.cases img {
+  filter: brightness(70%);
+}
+
+.cases img:hover {
+  filter: brightness(100%);
+}
+
+.team img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.callback__form {
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.callback__form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.callback__form .form__control {
+  margin-bottom: 1.5rem;
+}
+
+.callback__form input {
+  width: 100%;
+  padding: 0.5rem;
+  height: 4rem;
+  border: 1px solid var(--TERTER_PRIMARY_COLOR);
+}
+
+.callback__form input:focus {
+  outline-color: var(--FIRST_PRIMARY_COLOR);
+}
+
+.callback__form .btn {
+  margin-top: 2rem;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 20rem;
+}
+
+.footer .social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer a i {
+  color: var(--FIRST_DEFAULT_COLOR);
+}
+
+.footer a i:hover {
+  color: var(--FIRST_PRIMARY_COLOR);
 }

@@ -12,6 +12,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/utilities.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
@@ -160,6 +161,92 @@
           </div>
         </div>
       </section>
+
+      <!-- Team -->
+      <section class="team section__padding">
+        <header class="section__header">
+          <h4>Who we are</h4>
+          <h2>Our Profesional Team</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita,
+            eaque.
+          </p>
+        </header>
+        <div class="flex__items">
+          <div>
+            <img src="images/team/person1.jpg" alt="persona" />
+            <h4>John Doe</h4>
+            <p>President</p>
+          </div>
+          <div>
+            <img src="images/team/person2.jpg" alt="persona" />
+            <h4>Jane Doe</h4>
+            <p>Vice President</p>
+          </div>
+          <div>
+            <img src="images/team/person3.jpg" alt="persona" />
+            <h4>Steve Smith</h4>
+            <p>Marketing Head</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="contact flex__columns">
+        <div class="row">
+          <div class="column">
+            <div class="column__1">
+              <img src="images/home/contact.jpg" alt="" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column__2 bg__ligth">
+              <h2>Request Callback</h2>
+              <form action="" class="callback__form">
+                <div class="form__control">
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Enter name"
+                  />
+                </div>
+                <div class="form__control">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Enter email"
+                  />
+                </div>
+                <div class="form__control">
+                  <label for="phone">Phone</label>
+                  <input
+                    type="text"
+                    name="phone"
+                    id="phone"
+                    placeholder="Enter phone"
+                  />
+                </div>
+                <input type="submit" value="Send" id="submit" class="btn" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="footer bg__dark">
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+      <p>Copyrigth & Copy: 2022 - EdgeLedger</p>
+    </footer>
   </body>
 </html>
