@@ -71,6 +71,10 @@
 }
 
 /* Flex columns */
+.flex__columns.flex__reverse .row {
+  flex-direction: row-reverse;
+}
+
 .flex__columns .row {
   display: flex;
   flex-direction: row;
@@ -116,4 +120,58 @@
 .flex__columns p {
   margin: 2rem 0;
   font-size: 1.3rem;
+}
+
+/* Section Header */
+.section__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem;
+}
+
+.section__header h2 {
+  font-size: 4rem;
+  font-weight: 300;
+  margin: 2rem 0;
+}
+
+.section__header h4 {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.section__header p {
+  font-size: 1.4rem;
+}
+
+.section__padding {
+  padding: 2rem 2rem 4rem;
+}
+
+/* Flex Grid */
+.flex__grid .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex__grid .column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.flex__grid .column:not(:last-child) {
+  padding-right: 0.8rem;
+}
+
+.flex__grid .column img {
+  height: 50%;
+  object-fit: cover;
+}
+
+.flex__grid .column img:first-child {
+  padding-bottom: 0.8rem;
 }
