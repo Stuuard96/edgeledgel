@@ -46,8 +46,8 @@
   color: var(--FIRST_DEFAULT_COLOR);
 }
 
-.btn__ligth,
-.bg__ligth {
+.btn__light,
+.bg__light {
   background-color: var(--TERTEARY_PRIMARY_COLOR);
   color: var(--FIRST_PRIMARY_TEXT);
 }
