@@ -137,5 +137,32 @@
       </div>
       <p>Copyrigth & Copy: 2022 - EdgeLedger</p>
     </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      const navbarTop = document.querySelector('.navbar');
+      let scrolled = false;
+
+      window.onscroll = () => {
+        if (window.pageYOffset > 100) {
+          navbarTop.classList.remove('top');
+          if (!scrolled) {
+            navbarTop.style.transform = 'translateY(-70px)';
+            setTimeout(() => {
+              navbarTop.style.transform = 'translateY(0)';
+              scrolled = true;
+            }, 300);
+          }
+        } else {
+          navbarTop.classList.add('top');
+          scrolled = false;
+        }
+      };
+    </script>
   </body>
 </html>

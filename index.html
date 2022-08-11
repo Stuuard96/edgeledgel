@@ -13,6 +13,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="css/lightbox.min.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/utilities.css" />
     <link rel="stylesheet" href="css/styles.css" />
@@ -21,7 +22,7 @@
   <body id="home">
     <!-- Header -->
     <header class="hero">
-      <div class="navbar">
+      <div class="navbar top">
         <h1 class="logo">
           <span class="text__primary"><i class="fas fa-book-open"></i>Edge</span
           >Ledger
@@ -119,20 +120,76 @@
         </header>
         <div class="row">
           <div class="column">
-            <img src="images/cases/cases1.jpg" alt="" />
-            <img src="images/cases/cases2.jpg" alt="" />
+            <a
+              href="images/cases/cases1.jpg"
+              data-lightbox="cases"
+              data-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita,
+            eaque."
+            >
+              <img src="images/cases/cases1.jpg" alt="" />
+            </a>
+            <a
+              href="images/cases/cases2.jpg"
+              data-lightbox="cases"
+              data-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita,
+            eaque."
+            >
+              <img src="images/cases/cases2.jpg" alt="" />
+            </a>
           </div>
           <div class="column">
-            <img src="images/cases/cases3.jpg" alt="" />
-            <img src="images/cases/cases4.jpg" alt="" />
+            <a
+              href="images/cases/cases3.jpg"
+              data-lightbox="cases"
+              data-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita,
+            eaque."
+            >
+              <img src="images/cases/cases3.jpg" alt="" />
+            </a>
+            <a
+              href="images/cases/cases4.jpg"
+              data-lightbox="cases"
+              data-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita,
+            eaque."
+            >
+              <img src="images/cases/cases4.jpg" alt="" />
+            </a>
           </div>
           <div class="column">
-            <img src="images/cases/cases5.jpg" alt="" />
-            <img src="images/cases/cases6.jpg" alt="" />
+            <a
+              href="images/cases/cases5.jpg"
+              data-lightbox="cases"
+              data-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita,
+            eaque."
+            >
+              <img src="images/cases/cases5.jpg" alt="" />
+            </a>
+            <a
+              href="images/cases/cases6.jpg"
+              data-lightbox="cases"
+              data-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita,
+            eaque."
+            >
+              <img src="images/cases/cases6.jpg" alt="" />
+            </a>
           </div>
           <div class="column">
-            <img src="images/cases/cases7.jpg" alt="" />
-            <img src="images/cases/cases8.jpg" alt="" />
+            <a
+              href="images/cases/cases7.jpg"
+              data-lightbox="cases"
+              data-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita,
+            eaque."
+            >
+              <img src="images/cases/cases7.jpg" alt="" />
+            </a>
+            <a
+              href="images/cases/cases8.jpg"
+              data-lightbox="cases"
+              data-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita,
+            eaque."
+            >
+              <img src="images/cases/cases8.jpg" alt="" />
+            </a>
           </div>
         </div>
       </section>
@@ -249,5 +306,46 @@
       </div>
       <p>Copyrigth & Copy: 2022 - EdgeLedger</p>
     </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/lightbox.min.js"></script>
+    <script>
+      const navbarTop = document.querySelector('.navbar');
+      let scrolled = false;
+
+      window.onscroll = () => {
+        if (window.pageYOffset > 100) {
+          navbarTop.classList.remove('top');
+          if (!scrolled) {
+            navbarTop.style.transform = 'translateY(-70px)';
+            setTimeout(() => {
+              navbarTop.style.transform = 'translateY(0)';
+              scrolled = true;
+            }, 300);
+          }
+        } else {
+          navbarTop.classList.add('top');
+          scrolled = false;
+        }
+      };
+
+      // Smoth Scrolling
+      $('.navbar a, .btn').on('click', function (e) {
+        if (this.hash !== '') {
+          e.preventDefault();
+          const hash = this.hash;
+          $('html, body').animate(
+            {
+              scrollTop: $(hash).offset().top - 100,
+            },
+            800
+          );
+        }
+      });
+    </script>
   </body>
 </html>
