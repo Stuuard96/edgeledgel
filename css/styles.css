@@ -208,6 +208,34 @@ body {
   margin-top: 2rem;
 }
 
+/* Post */
+.post {
+  padding: 5rem 3rem;
+}
+
+.post h2 {
+  font-size: 4rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: #ccc solid 1px;
+}
+
+.post .meta {
+  margin-bottom: 3rem;
+}
+
+.post p:not(:last-child, .meta) {
+  margin-bottom: 1.5rem;
+}
+
+.post img {
+  width: 30rem;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 3rem;
+}
+
 /* Footer */
 .footer {
   display: flex;
