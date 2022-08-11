@@ -81,15 +81,12 @@
 
 .flex__columns .row {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  width: 100%;
 }
 
 .flex__columns .column {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
+  flex: 50%;
+  max-width: 50%;
 }
 
 .flex__columns .column .column__1,
@@ -130,7 +127,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 3rem;
+  padding: 3rem 0;
 }
 
 .section__header h2 {
@@ -147,12 +144,12 @@
 .flex__grid .row {
   display: flex;
   flex-wrap: wrap;
+  line-height: 0;
 }
 
 .flex__grid .column {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
+  flex: 25%;
+  max-width: 25%;
 }
 
 .flex__grid .column:not(:last-child) {
@@ -162,8 +159,5 @@
 .flex__grid .column img {
   height: 50%;
   object-fit: cover;
-}
-
-.flex__grid .column img:first-child {
   padding-bottom: 0.8rem;
 }

@@ -91,6 +91,7 @@ body {
 .navbar .logo {
   font-size: 3.2rem;
   font-weight: 400;
+  line-height: 2;
 }
 
 /* Header */
@@ -226,4 +227,41 @@ body {
 
 .footer a i:hover {
   color: var(--FIRST_PRIMARY_COLOR);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    height: 12rem;
+    padding: 0 2rem;
+  }
+
+  .navbar a {
+    padding: 1rem;
+    margin: 0 0.3rem;
+  }
+
+  .flex__items {
+    flex-direction: column;
+  }
+
+  .flex__columns .column,
+  .flex__grid .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .flex__columns h2 {
+    font-size: 3rem;
+  }
+
+  .flex__grid .column:not(:last-child) {
+    padding-right: 0;
+  }
+
+  .team img {
+    width: 80%;
+  }
 }
